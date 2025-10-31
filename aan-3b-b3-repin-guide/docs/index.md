@@ -11,8 +11,8 @@
 ## 📥 Downloads
 
 <div class="btn-row">
-  <a class="btn" href="../aan-3b-b3-repin-guide/spec/AAN_to_3B_B3_7A_Repin_Guide.pdf">⬇ Download PDF Guide</a>
-  <a class="btn secondary" href="../aan-3b-b3-repin-guide/spec/AAN_to_3B_B3_7A_full.xlsx">⬇ Download Spreadsheet</a>
+  <a class="btn" href="../spec/AAN_to_3B_B3_7A_Repin_Guide.pdf">⬇ Download PDF Guide</a>
+  <a class="btn secondary" href="../spec/AAN_to_3B_B3_7A_full.xlsx">⬇ Download Spreadsheet</a>
 </div>
 
 ---
