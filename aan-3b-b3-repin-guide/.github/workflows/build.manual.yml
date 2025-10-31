@@ -1,0 +1,23 @@
+name: Build Wiring Manual
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'aan-3b-b3-repin-guide/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install reportlab pandas openpyxl xlsxwriter
+      - name: Build PDF
+        run: python aan-3b-b3-repin-guide/build/build_local.py --spec aan-3b-b3-repin-guide/build/buildspec.json
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AAN_to_3B_B3_7A_Repin_Guide_Full_Manual
+          path: aan-3b-b3-repin-guide/spec/AAN_to_3B_B3_7A_Repin_Guide_Full_Manual.pdf
