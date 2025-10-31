@@ -1,0 +1,13 @@
+name: Wiring Fix
+description: Propose a correction to a wire color, pin mapping, or connector assignment.
+title: "[WIRING] Short description"
+labels: ["wiring"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to change? Include connector ID, cavity, color, and destination.
+      placeholder: T8a/3 currently WS/BL to VSS; confirm is GE/BL to cluster?
+    validations:
+      required: true
